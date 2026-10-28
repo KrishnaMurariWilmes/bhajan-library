@@ -1,0 +1,84 @@
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Radha Nama Parama Sukhadai</title>
+
+<style>
+body {
+    font-family: Arial;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    line-height: 1.8;
+}
+
+.lyrics {
+    white-space: pre-wrap;
+    font-size: 24px;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Radha Nama Parama Sukhadai</h1>
+
+<p>
+<b>Category:</b> Radha<br>
+<b>Language:</b> Hindi<br>
+<b>Type:</b> Bhajan
+</p>
+
+<button onclick="bigger()">A+</button>
+<button onclick="smaller()">A-</button>
+
+<div class="lyrics" id="lyrics">
+rādhā-nāma parama sukhadāī 
+
+(1)
+
+lahara-lahara śrī śyāma jīu kī mana meń mere samāī 
+
+(2)
+
+rata-rata rādhā janama bītāūń, bṛja gopīnā ku śīśa navāūń 
+
+(3)
+
+mahimā kahi nahi jāī rādhā nāma parama sukhadāī
+
+(4)
+
+braja tyāja ke maiń kahiń nahiń jāūń rasika santana ke darasana pāūń
+
+(5)
+
+jaga se pritī haṭāī rādhā nāma parama sukhadāī
+</div>
+
+<br>
+<a href="index.html">← Home</a>
+
+<script>
+function bigger(){
+    let e=document.getElementById('lyrics');
+    let size=parseInt(window.getComputedStyle(e).fontSize);
+    e.style.fontSize=(size+2)+'px';
+}
+
+function smaller(){
+    let e=document.getElementById('lyrics');
+    let size=parseInt(window.getComputedStyle(e).fontSize);
+    e.style.fontSize=(size-2)+'px';
+}
+</script>
+
+</body>
+</html>

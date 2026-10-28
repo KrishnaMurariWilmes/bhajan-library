@@ -1,0 +1,61 @@
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<style>
+body{
+    font-family:Arial;
+    max-width:900px;
+    margin:auto;
+    padding:20px;
+}
+
+a{
+    text-decoration:none;
+}
+
+input{
+    width:100%;
+    font-size:20px;
+    padding:10px;
+}
+</style>
+
+<script>
+function searchSongs() {
+
+ let filter =
+ document.getElementById("search").value.toLowerCase();
+
+ let items =
+ document.getElementsByClassName("song");
+
+ for(let i=0;i<items.length;i++){
+
+  let txt=items[i].innerText.toLowerCase();
+
+  if(txt.includes(filter))
+     items[i].style.display="";
+  else
+     items[i].style.display="none";
+
+ }
+}
+</script>
+
+</head>
+
+<body>
+
+<h1>My Bhajan Library</h1>
+
+<input
+id="search"
+type="text"
+placeholder="Search..."
+onkeyup="searchSongs()">
+
+<h2>Caitanya</h2><ul><li class="song"><a href="Sri Krishna Caitanya Prabhu.html">śrī-kṛṣṇa-caitanya prabhu</a></li></ul><h2>Guru</h2><ul><li class="song"><a href="Samsara Davanala.html">Samsara davanala</a></li></ul><h2>Radha</h2><ul><li class="song"><a href="Radha Nama Parama Sukhadai.html">Radha Nama Parama Sukhadai</a></li><li class="song"><a href="Radhe Jaya Jaya Madhava Dayite.html">Rādhe jaya jaya mādhava-dayite</a></li></ul><h2>Radha Krishna</h2><ul><li class="song"><a href="Radha Krishna Prana Mora.html">Radha Krishna Prana Mora</a></li></ul>
+</body>
+</html>

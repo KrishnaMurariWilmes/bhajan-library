@@ -1,0 +1,133 @@
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Samsara davanala</title>
+
+<style>
+body {
+    font-family: Arial;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    line-height: 1.8;
+}
+
+.lyrics {
+    white-space: pre-wrap;
+    font-size: 24px;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Samsara davanala</h1>
+
+<p>
+<b>Category:</b> Guru<br>
+<b>Language:</b> Sanskrit<br>
+<b>Type:</b> Bhajan
+</p>
+
+<button onclick="bigger()">A+</button>
+<button onclick="smaller()">A-</button>
+
+<div class="lyrics" id="lyrics">
+(1)
+
+saḿsāra-dāvānala-līḍha-loka-
+trāṇāya kāruṇya-ghanāghanatvam
+prāptasya kalyāṇa-guṇārṇavasya
+vande guroḥ śrī-caraṇāravindam
+
+ 
+
+(2)
+
+mahāprabhoḥ kīrtana-nṛtya-gīta-
+vāditra-mādyan-manaso rasena
+romāñca -kampāśru-tarańga-bhājo
+vande guroḥ śrī-caraṇāravindam
+
+ 
+
+(3)
+
+śrī-vigrahārādhana-nitya-nānā-
+śṛńgāra-tan-mandira-mārjanādau
+yuktasya bhaktāḿś ca niyuñjato 'pi
+vande guroḥ śrī-caraṇāravindam
+
+ 
+
+(4)
+
+catur-vidha-śrī-bhagavat-prasāda-
+svādv-anna-tṛptān hari-bhakta-sańghān
+kṛtvaiva tṛptiḿ bhajataḥ sadaiva
+vande guroḥ śrī-caraṇāravindam
+
+ 
+
+(5)
+
+śrī-rādhikā-mādhavayor apāra-
+mādhurya-līlā guṇa-rūpa-nāmnām
+prati-kṣaṇāsvādana-lolupasya
+vande guroḥ śrī-caraṇāravindam
+
+ 
+
+(6)
+
+nikuñja-yūno rati-keli-siddhyai
+yā yālibhir yuktir apekṣaṇīyā
+tatrāti-dākṣyād ati-vallabhasya
+vande guroḥ śrī-caraṇāravindam
+
+ 
+
+(7)
+
+sākṣād-dharitvena samasta-śāstrair
+uktas tathā bhāvyata eva sadbhiḥ
+kintu prabhor yaḥ priya eva tasya
+vande guroḥ śrī-caraṇāravindam
+
+ 
+
+(8)
+
+yasya prasādād bhagavat-prasādo
+yasyāprasādān na gatiḥ kuto 'pi
+dhyāyan stuvaḿs tasya yaśas tri-sandhyaḿ
+vande guroḥ śrī-caraṇāravindam
+ 
+</div>
+
+<br>
+<a href="index.html">← Home</a>
+
+<script>
+function bigger(){
+    let e=document.getElementById('lyrics');
+    let size=parseInt(window.getComputedStyle(e).fontSize);
+    e.style.fontSize=(size+2)+'px';
+}
+
+function smaller(){
+    let e=document.getElementById('lyrics');
+    let size=parseInt(window.getComputedStyle(e).fontSize);
+    e.style.fontSize=(size-2)+'px';
+}
+</script>
+
+</body>
+</html>

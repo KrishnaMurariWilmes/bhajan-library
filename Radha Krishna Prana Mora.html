@@ -1,0 +1,97 @@
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Radha Krishna Prana Mora</title>
+
+<style>
+body {
+    font-family: Arial;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    line-height: 1.8;
+}
+
+.lyrics {
+    white-space: pre-wrap;
+    font-size: 24px;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Radha Krishna Prana Mora</h1>
+
+<p>
+<b>Category:</b> Radha Krishna<br>
+<b>Language:</b> Bengali<br>
+<b>Type:</b> Bhajan
+</p>
+
+<button onclick="bigger()">A+</button>
+<button onclick="smaller()">A-</button>
+
+<div class="lyrics" id="lyrics">
+
+(1)
+rādhā-kṛṣṇa prāṇa mora jugala-kiśora
+jīvane maraṇe gati āro nāhi mora
+
+ 
+
+(2)
+kālindīra kūle keli-kadambera vana
+ratana-bedīra upara bosābo du'jana
+
+ 
+
+(3)
+śyāma-gaurī-ańge dibo (cūwā) candanera gandha
+cāmara ḍhulābo kabe heri mukha-candra
+
+ 
+
+(4)
+gāthiyā mālatīr mālā dibo dohāra gale
+adhare tuliyā dibo karpūra-tāmbūle
+
+ 
+
+(5)
+lalitā viśākhā-ādi jata sakhī-bṛnda
+ājñāya koribo sebā caraṇāravinda
+
+ 
+
+(6)
+śrī-kṛṣṇa-caitanya-prabhur dāser anudāsa
+sevā abhilāṣa kore narottama-dāsa
+</div>
+
+<br>
+<a href="index.html">← Home</a>
+
+<script>
+function bigger(){
+    let e=document.getElementById('lyrics');
+    let size=parseInt(window.getComputedStyle(e).fontSize);
+    e.style.fontSize=(size+2)+'px';
+}
+
+function smaller(){
+    let e=document.getElementById('lyrics');
+    let size=parseInt(window.getComputedStyle(e).fontSize);
+    e.style.fontSize=(size-2)+'px';
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>śrī-kṛṣṇa-caitanya prabhu</title>
+
+<style>
+body {
+    font-family: Arial;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    line-height: 1.8;
+}
+
+.lyrics {
+    white-space: pre-wrap;
+    font-size: 24px;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>śrī-kṛṣṇa-caitanya prabhu</h1>
+
+<p>
+<b>Category:</b> Caitanya<br>
+<b>Language:</b> Bengali<br>
+<b>Type:</b> Bhajan
+</p>
+
+<button onclick="bigger()">A+</button>
+<button onclick="smaller()">A-</button>
+
+<div class="lyrics" id="lyrics">
+(1)
+śrī-kṛṣṇa-caitanya prabhu doyā koro more
+tomā binā ke doyālu jagat-saḿsāre
+
+ 
+
+(2)
+patita-pāvana-hetu tava avatāra
+mo sama patita prabhu nā pāibe āra
+
+ 
+
+(3)
+hā hā prabhu nityānanda, premānanda sukhī
+kṛpābalokana koro āmi boro duḥkhī
+
+ 
+
+(4)
+doyā koro sītā-pati adwaita gosāi
+tava kṛpā-bale pāi caitanya-nitāi
+
+ 
+
+(5)
+
+gaura premamaya tanu paṇḍita gadādhara
+
+srīnivāsa haridāsa doyāra sāgara
+
+ 
+
+(6)
+hā hā swarūp, sanātana, rūpa, raghunātha
+bhaṭṭa-juga, śrī-jīva hā prabhu lokanātha
+
+ 
+
+(7)
+doyā koro śrī-ācārya prabhu śrīnivāsa
+rāmacandra-sańga māge narottama-dāsa
+</div>
+
+<br>
+<a href="index.html">← Home</a>
+
+<script>
+function bigger(){
+    let e=document.getElementById('lyrics');
+    let size=parseInt(window.getComputedStyle(e).fontSize);
+    e.style.fontSize=(size+2)+'px';
+}
+
+function smaller(){
+    let e=document.getElementById('lyrics');
+    let size=parseInt(window.getComputedStyle(e).fontSize);
+    e.style.fontSize=(size-2)+'px';
+}
+</script>
+
+</body>
+</html>
