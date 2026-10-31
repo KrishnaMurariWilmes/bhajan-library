@@ -1,0 +1,109 @@
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mero Radha Raman Giridhari</title>
+
+<style>
+body {
+    font-family: Arial;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    line-height: 1.8;
+}
+
+.lyrics {
+    white-space: pre-wrap;
+    font-size: 24px;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Mero Radha Raman Giridhari</h1>
+
+<p>
+<b>Category:</b> Radha Krishna<br>
+<b>Language:</b> Hindi<br>
+<b>Type:</b> Bhajan
+</p>
+
+<button onclick="bigger()">A+</button>
+<button onclick="smaller()">A-</button>
+
+<div class="lyrics" id="lyrics">
+Title: Mero Radha Raman Giridhari
+Category: Radha Krishna
+Language: Hindi
+Type: Bhajan
+
+--------------------------
+
+मेरो राधा रमण गिरधारी,
+गिरधारी श्याम बनवारी,
+मेरो राधा रमण गिरधारी,
+गिरधारी श्याम बनवारी,
+मेरो राधा रमण गिरधारी,
+गिरधारी श्याम बनवारी,
+
+गोविंद मेरो है, गोपाल मेरो है,
+श्री बांके बिहारी, नंदलाल मेरो है,
+गोविंद मेरो है, गोपाल मेरो है,
+श्री बांके बिहारी, नंदलाल मेरो है,
+गोविंद मेरो है, गोपाल मेरो है
+
+भजो राधे गोविंद,
+भजो राधे गोविंद,
+भजो राधे गोविंद,
+भजो राधे गोविंद,
+
+रटो राधे गोविंद,
+रटो राधे गोविंद,
+रटो राधे गोविंद,
+रटो राधे गोविंद,
+
+भजो राधे गोविंद,
+भजो राधे गोविंद,
+भजो राधे गोविंद,
+भजो राधे गोविंद,
+भजो राधे गोविंद,
+रटो राधे गोविंद,
+
+भजो राधे गोविंद,
+भजो राधे गोविंद,
+भजो राधे गोविंद,
+भजो राधे गोविंद
+
+रटो राधे गोविंद,
+रटो राधे गोविंद,
+भजो राधे गोविंद,
+रटो राधे गोविंद,
+</div>
+
+<br>
+<a href="index.html">← Home</a>
+
+<script>
+function bigger(){
+    let e=document.getElementById('lyrics');
+    let size=parseInt(window.getComputedStyle(e).fontSize);
+    e.style.fontSize=(size+2)+'px';
+}
+
+function smaller(){
+    let e=document.getElementById('lyrics');
+    let size=parseInt(window.getComputedStyle(e).fontSize);
+    e.style.fontSize=(size-2)+'px';
+}
+</script>
+
+</body>
+</html>

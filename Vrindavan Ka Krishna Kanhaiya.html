@@ -1,0 +1,90 @@
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Vrindavan Ka Krishna Kanhaiya</title>
+
+<style>
+body {
+    font-family: Arial;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    line-height: 1.8;
+}
+
+.lyrics {
+    white-space: pre-wrap;
+    font-size: 24px;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Vrindavan Ka Krishna Kanhaiya</h1>
+
+<p>
+<b>Category:</b> Krishna<br>
+<b>Language:</b> Hindi<br>
+<b>Type:</b> Bhajan
+</p>
+
+<button onclick="bigger()">A+</button>
+<button onclick="smaller()">A-</button>
+
+<div class="lyrics" id="lyrics">
+Title: Vrindavan Ka Krishna Kanhaiya
+Category: Krishna
+Language: Hindi
+Type: Bhajan
+
+--------------------------
+
+वृन्दावन का कृष्ण कन्हैया सबकी आँखों का तारा
+वृन्दावन का कृष्ण कन्हैया सबकी आँखों का तारा
+मन ही मन क्यों जले राधिका मोहन तो है सबका प्यारा
+मन ही मन क्यों जले राधिका मोहन तो है सबका प्यारा
+वृन्दावन का कृष्ण कन्हैया सबकी आँखों का तारा
+
+जमुना तट पर नन्द का लाला जब जब रास रचाये रे
+जमुना तट पर नन्द का लाला जब जब रास रचाये रे
+तन मन डोले कान्हा ऐसे बंसी मधुर बजाये
+सुध बुध भूली खड़ी गोपियाँ जाने कैसा जादू डाला
+वृन्दावन का कृष्ण कन्हैया सबकी आँखों का तारा
+
+रंग सलोना ऐसा जैसे छाई हो घट सावन की
+रंग सलोना ऐसा जैसे छाई हो घट सावन की
+ऐ री मैं तो हुई दीवानी मनमोहन मन भावन की
+तेरे कारण देख साँवरे छोड़ दिया मैं ने जग सारा
+
+वृन्दावन का कृष्ण कन्हैया सबकी आँखों का तारा
+मन ही मन क्यों जले राधिका मोहन तो है सबका प्यारा
+वृन्दावन का कृष्ण कन्हैया सबकी आँखों का तारा
+</div>
+
+<br>
+<a href="index.html">← Home</a>
+
+<script>
+function bigger(){
+    let e=document.getElementById('lyrics');
+    let size=parseInt(window.getComputedStyle(e).fontSize);
+    e.style.fontSize=(size+2)+'px';
+}
+
+function smaller(){
+    let e=document.getElementById('lyrics');
+    let size=parseInt(window.getComputedStyle(e).fontSize);
+    e.style.fontSize=(size-2)+'px';
+}
+</script>
+
+</body>
+</html>

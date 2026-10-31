@@ -1,0 +1,84 @@
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hari Sundar Nanda Mukund</title>
+
+<style>
+body {
+    font-family: Arial;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    line-height: 1.8;
+}
+
+.lyrics {
+    white-space: pre-wrap;
+    font-size: 24px;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Hari Sundar Nanda Mukund</h1>
+
+<p>
+<b>Category:</b> Krishna<br>
+<b>Language:</b> Hindi<br>
+<b>Type:</b> Bhajan
+</p>
+
+<button onclick="bigger()">A+</button>
+<button onclick="smaller()">A-</button>
+
+<div class="lyrics" id="lyrics">
+Title: Hari Sundar Nanda Mukund
+Category: Krishna
+Language: Hindi
+Type: Bhajan
+
+--------------------------
+
+Hari Sundar Nanda Mukunda Hari Narayana Hari Om
+Hari Keshava Hari Govinda Hari Narayana Hari Om
+
+Vanmali Muralidhari Govardhan Girivardhari
+Nit Nit Kar Makhan Chori Gopi Mann Haari
+
+Aao Re Gao Re Gokul ke pyaare
+Aao Re Kanha re Gokul ke Pyaare
+Aao Re Naacho re Raas Rachao Re
+Gao Re Naacho re Raas Rachao Re
+
+Hari Sundara Nanda Mukunda Hari Narayana Hari Om
+Hari Keshava Hari Govinda Hari Narayana Hari Om
+
+</div>
+
+<br>
+<a href="index.html">← Home</a>
+
+<script>
+function bigger(){
+    let e=document.getElementById('lyrics');
+    let size=parseInt(window.getComputedStyle(e).fontSize);
+    e.style.fontSize=(size+2)+'px';
+}
+
+function smaller(){
+    let e=document.getElementById('lyrics');
+    let size=parseInt(window.getComputedStyle(e).fontSize);
+    e.style.fontSize=(size-2)+'px';
+}
+</script>
+
+</body>
+</html>

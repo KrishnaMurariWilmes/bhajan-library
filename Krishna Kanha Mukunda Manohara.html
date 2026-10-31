@@ -1,0 +1,87 @@
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Krishna Kanha Mukunda Manohara</title>
+
+<style>
+body {
+    font-family: Arial;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    line-height: 1.8;
+}
+
+.lyrics {
+    white-space: pre-wrap;
+    font-size: 24px;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Krishna Kanha Mukunda Manohara</h1>
+
+<p>
+<b>Category:</b> Krishna<br>
+<b>Language:</b> Hindi<br>
+<b>Type:</b> Bhajan
+</p>
+
+<button onclick="bigger()">A+</button>
+<button onclick="smaller()">A-</button>
+
+<div class="lyrics" id="lyrics">
+Title: Krishna Kanha Mukunda Manohara
+Category: Krishna
+Language: Hindi
+Type: Bhajan
+
+--------------------------
+
+Krishna Kanha Mukunda Manohara
+Ananda Kanda Ghanshyam Sundara  
+Krishna Kanha Mukunda Manohara
+
+Man Mohana Muralidhara 
+Natavara Giridhara Gopala 
+Krishna Kanha Mukunda Manohara
+
+Jagadeeswara Karunakara 
+Keshava Madhava Gopala   
+Krishna Kanha Mukunda Manohara
+
+Ravilochana Bhavlochana 
+Sawara Sundara Gopala 
+Krishna Kanha Mukunda Manohara
+Ananda Kanda Ghanshyam Sundara  
+Krishna Kanha Mukunda Manohara
+</div>
+
+<br>
+<a href="index.html">← Home</a>
+
+<script>
+function bigger(){
+    let e=document.getElementById('lyrics');
+    let size=parseInt(window.getComputedStyle(e).fontSize);
+    e.style.fontSize=(size+2)+'px';
+}
+
+function smaller(){
+    let e=document.getElementById('lyrics');
+    let size=parseInt(window.getComputedStyle(e).fontSize);
+    e.style.fontSize=(size-2)+'px';
+}
+</script>
+
+</body>
+</html>

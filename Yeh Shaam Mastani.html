@@ -1,0 +1,93 @@
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Yeh Shaam Mastani</title>
+
+<style>
+body {
+    font-family: Arial;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    line-height: 1.8;
+}
+
+.lyrics {
+    white-space: pre-wrap;
+    font-size: 24px;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Yeh Shaam Mastani</h1>
+
+<p>
+<b>Category:</b> Filmy<br>
+<b>Language:</b> Hindi<br>
+<b>Type:</b> Filmy
+</p>
+
+<button onclick="bigger()">A+</button>
+<button onclick="smaller()">A-</button>
+
+<div class="lyrics" id="lyrics">
+Title: Yeh Shaam Mastani
+Category: Filmy
+Language: Hindi
+Type: Filmy
+
+--------------------------
+ए हे हम्म हम्म हम्म हम्म
+ये शाम मस्तानी, मदहोश किए जाए
+मुझे डोर कोई खीछे, तेरी ओर लिए जाए
+ये शाम मस्तानी, मदहोश किए जाए
+मुझे डोर कोई खीछे, तेरी ओर लिए जाए
+हूँ हूँ हूँ हूँ हूँ हूँ हूँ हूँ हूँ
+हूँ हूँ हूँ हूँ हूँ हूँ हूँ हूँ हूँ
+दूर रहती है तू, मेरे पास आती नही
+होंठों पे तेरे, कभी प्यास आती नही
+ऐसा लगे, जैसे की तू, हँसके ज़हर कोई पिए जाए
+ये शाम मस्तानी, मदहोश किए जाए
+मुझे डोर कोई खीछे, तेरी ओर लिए जाए
+बात जब मैं करूँ, मुझे रोक देती है क्यो
+तेरी मीठी नज़र, मुझे टोक देती है क्यो
+तेरी हया, तेरी शरम, तेरी क़सम मेरे होंठ सीए जाए
+ये शाम मस्तानी, मदहोश किए जाए
+मुझे डोर कोई खीछे, तेरी ओर लिए जाए
+एक रूठी हुई, तक़दीर जैसे कोई
+खामोश ऐसे है तू, तस्वीर जैसे कोई
+तेरी नज़र, बनके ज़ुबान, लेकिन तेरे पैगाम दिए जाए
+ये शाम मस्तानी, मदहोश किए जाए
+मुझे डोर कोई खीछे, तेरी ओर लिए जाए
+ये शाम मस्तानी, मदहोश किए जाए
+मुझे डोर कोई खीछे, तेरी ओर लिए जाए
+</div>
+
+<br>
+<a href="index.html">← Home</a>
+
+<script>
+function bigger(){
+    let e=document.getElementById('lyrics');
+    let size=parseInt(window.getComputedStyle(e).fontSize);
+    e.style.fontSize=(size+2)+'px';
+}
+
+function smaller(){
+    let e=document.getElementById('lyrics');
+    let size=parseInt(window.getComputedStyle(e).fontSize);
+    e.style.fontSize=(size-2)+'px';
+}
+</script>
+
+</body>
+</html>

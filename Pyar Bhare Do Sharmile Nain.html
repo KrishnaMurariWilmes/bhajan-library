@@ -1,0 +1,90 @@
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Pyar Bhare Do Sharmile Nain</title>
+
+<style>
+body {
+    font-family: Arial;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    line-height: 1.8;
+}
+
+.lyrics {
+    white-space: pre-wrap;
+    font-size: 24px;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Pyar Bhare Do Sharmile Nain</h1>
+
+<p>
+<b>Category:</b> Ghazal<br>
+<b>Language:</b> Hindi<br>
+<b>Type:</b> Ghazal
+</p>
+
+<button onclick="bigger()">A+</button>
+<button onclick="smaller()">A-</button>
+
+<div class="lyrics" id="lyrics">
+Title: Pyar Bhare Do Sharmile Nain
+Category: Ghazal
+Language: Hindi
+Type: Ghazal
+
+--------------------------
+
+प्यार भरे दो शर्मीले नैन
+जिनसे मिला मेरे दिल को चैन
+कोई जाने ना, क्यूँ मुझसे शर्माएँ?
+कैसे मुझे तड़पाएँ?
+प्यार भरे दो शर्मीले नैन
+दिल ये कहे, गीत मैं तेरे गाऊँ
+तू ही सुनें, और मैं गाता जाऊँ
+तू जो रहे, साथ मेरे
+दुनिया को ठुकराऊँ
+तेरा दिल बहलाऊँ
+प्यार भरे दो शर्मीले नैन
+डर है मुझे, तुझसे बिछड़ ना जाऊँ
+खो के तुझे, मिलने की राह ना पाऊँ
+ऐसा न हो, जब भी तेरा
+नाम लबों पर लाऊँ
+मैं आँसू बन जाऊँ
+जिनसे मिला मेरे दिल को चैन
+कोई जाने ना, क्यूँ मुझसे शर्माएँ?
+कैसे मुझे तड़पाएँ?
+प्यार भरे दो शर्मीले नैन
+</div>
+
+<br>
+<a href="index.html">← Home</a>
+
+<script>
+function bigger(){
+    let e=document.getElementById('lyrics');
+    let size=parseInt(window.getComputedStyle(e).fontSize);
+    e.style.fontSize=(size+2)+'px';
+}
+
+function smaller(){
+    let e=document.getElementById('lyrics');
+    let size=parseInt(window.getComputedStyle(e).fontSize);
+    e.style.fontSize=(size-2)+'px';
+}
+</script>
+
+</body>
+</html>

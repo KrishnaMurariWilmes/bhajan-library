@@ -1,0 +1,117 @@
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Gulshan ki bahaaron mein</title>
+
+<style>
+body {
+    font-family: Arial;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    line-height: 1.8;
+}
+
+.lyrics {
+    white-space: pre-wrap;
+    font-size: 24px;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Gulshan ki bahaaron mein</h1>
+
+<p>
+<b>Category:</b> Ghazal<br>
+<b>Language:</b> Hindi<br>
+<b>Type:</b> Ghazal
+</p>
+
+<button onclick="bigger()">A+</button>
+<button onclick="smaller()">A-</button>
+
+<div class="lyrics" id="lyrics">
+Title: Gulshan ki bahaaron mein
+Category: Ghazal
+Language: Hindi
+Type: Ghazal
+
+--------------------------
+Gulshan ki bahaaron mein
+Rangeen nazaaron mein
+Jab tum mujhe dhundhoge
+Aankhon mein nami hogi
+Mehsoos tumhe har dam
+Phir meri kami hogi
+Gulshan ki bahaaron mein
+Rangeen nazaaron mein
+Gulshan ki bahaaron mein
+Rangeen nazaaron mein
+
+Aakash pe jab taare
+Sangeet sunayenge
+Beete hue lamhon ko
+Aankhon mein sajayenge
+Tanhaai ke sholon se
+Jab aag lagi hogi
+Mehsoos tumhe har dam
+Phir meri kami hogi
+
+Gulshan ki bahaaron mein
+Rangeen nazaaron mein
+Jab tum mujhe dhundhoge
+Aankhon mein nami hogi
+Mehsoos tumhe har dam
+Phir meri kami hogi
+Gulshan ki bahaaron mein
+Rangeen nazaaron mein
+
+Saawan ki hawaaon ka
+Jab shor sunoge tum
+Bikhre hue maazi ke
+Auraaq chunoge tum
+Mahaul ke chehre par
+Jab dhool jami hogi
+Mehsoos tumhe har dam
+Phir meri kami hogi
+
+Gulshan ki bahaaron mein
+Rangeen nazaaron mein
+Jab tum mujhe dhundhoge
+Aankhon mein nami hogi
+Mehsoos tumhe har dam
+Phir meri kami hogi
+Gulshan ki bahaaron mein
+Rangeen nazaaron mein
+Gulshan ki bahaaron mein
+Rangeen nazaaron mein
+</div>
+
+<br>
+<a href="index.html">← Home</a>
+
+<script>
+function bigger(){
+    let e=document.getElementById('lyrics');
+    let size=parseInt(window.getComputedStyle(e).fontSize);
+    e.style.fontSize=(size+2)+'px';
+}
+
+function smaller(){
+    let e=document.getElementById('lyrics');
+    let size=parseInt(window.getComputedStyle(e).fontSize);
+    e.style.fontSize=(size-2)+'px';
+}
+</script>
+
+</body>
+</html>
